@@ -7,6 +7,8 @@ library(dplyr)
 library("readxl")
 futbol1 <- read_excel("C:/Users/mcond/OneDrive/Escritorio/Liga Santander.xlsx")
 
+# Gráfico de correlación
+
 corrplot(cor(select(futbol1, goles_local, primera_visitante, remates_local, remates_visitante, 
                       faltas_local, faltas_visitante ,corners_local, 
                       amarillas_local, amarillas_visitante)),
